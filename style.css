@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --bg-color: #121214;
+
+    --base-color: 194;
+    --bg-primary-light: hsla(var(--base-color), 100%, 63%, 0.13);
+    --primary-color: hsl(var(--base-color), 100%, 63%);
+
+    --text-color: #FFFFFF;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    min-height: 100vh;
+    display: grid;
+
+}
+
+button, img {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+img {
+    width: clamp(3.2rem, 4rem + 12vw 6.4rem);
+}
+
+.container {
+
+
+    position: relative;
+}
+
+
+main {
+    align-self: end;
+    justify-self: center;
+}
+
+
+
+.container #timer {
+    font-size: 8.8rem;
+
+    display: flex;
+    color: var(--text-color);
+
+    font-size: clamp(4rem, 4rem + 10vw, 8.8rem);
+    font-family: 'Roboto';
+    font-weight: 700;
+
+    margin-bottom: 1.6rem;
+
+
+}
+
+.container #controls {
+    background-color: var(--bg-primary-light);
+    width: clamp(10rem, 10rem + 30vw, 22.8rem);
+    height: clamp(8rem, 1rem + 10vh, 10.8rem);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+
+    border-radius: 999rem;
+
+}
+
+.sound-on {
+    position: absolute;
+    bottom: 1.6rem;
+    right: 1.6rem;
+}
+
+footer {
+    align-self: end;
+    justify-self: end;
+    padding: 0 4rem 3.2rem 0
+}
