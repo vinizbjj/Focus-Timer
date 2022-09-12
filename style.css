@@ -89,6 +89,12 @@ main {
     right: 1.6rem;
 }
 
+.sound-off {
+    position: absolute;
+    bottom: 1.6rem;
+    right: 1.6rem;
+}
+
 
 
 footer {
